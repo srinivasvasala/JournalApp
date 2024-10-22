@@ -1,2 +1,9 @@
-package com.srinivas.journalapp.Repository;public interface JournalEntryRepository {
+package com.srinivas.journalapp.Repository;
+
+import com.srinivas.journalapp.Entity.JournalEntry;
+import org.bson.types.ObjectId;
+import org.springframework.data.mongodb.repository.MongoRepository;
+
+public interface JournalEntryRepository extends MongoRepository<JournalEntry, ObjectId> {
+
 }

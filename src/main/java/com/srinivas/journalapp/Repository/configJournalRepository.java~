@@ -1,0 +1,6 @@
+package com.srinivas.journalapp.Repository;
+
+import com.srinivas.journalapp.Entity.ConfigJournalEntity;
+
+public interface configJournalRepository extends MongoRepository<ConfigJournalEntity, String> {
+}
